@@ -5,3 +5,7 @@ repos:
         name: eslint
         entry: bash -c "cd ./client && npx eslint --fix 'src/**/*.ts'"
         language: node
+      - id: prettier
+        name: prettier
+        entry: bash -c "cd ./client && pnpm exec prettier . --write"
+        language: node
